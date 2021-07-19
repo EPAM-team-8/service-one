@@ -3,6 +3,7 @@ resource "aws_instance" "Service-One" {
   instance_type          = "t2.small"
   vpc_security_group_ids = [data.aws_security_group.sg.id]
   key_name               = "epamclass"
+  subnet_id = data.aws_subnet.private_subnet.id
 
   tags = {
     Name = "Service-One"
