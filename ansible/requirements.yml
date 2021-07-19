@@ -1,0 +1,5 @@
+---
+
+- src: 'https://github.com/EPAM-team-8/ansible-role-service-one.git'
+  name: service-one
+  version: 'develop'
